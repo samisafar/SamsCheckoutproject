@@ -1,0 +1,79 @@
+﻿
+@{
+    ViewBag.Title = "CheckOut Page";
+
+}
+
+<div id="paymentMethodsResponse" class="hidden">@ViewBag.paymentMethodsResponse</div>
+
+@*<b>Payment Methods: </b>@ViewBag.paymentMethodsResponse;*@
+
+<div class="Checkout_section mt-60">
+    <div class="checkout_form">
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <form action="#">
+                    <h3>Choose Your Payment Method</h3>
+
+                    <div id="dropin-container"></div>
+
+                </form>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <form action="#">
+                    <h3>Your order</h3>
+                    <div class="order_table table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td> Garmin FENIX 6 PRO <strong> × 1</strong></td>
+                                    <td> $600.00</td>
+                                </tr>
+                                <tr>
+                                    <td>  </td><td>  </td>
+                                </tr>
+                                <tr>
+                                    <td>  </td><td>  </td>
+                                </tr>
+                                <tr>
+                                    <td>  </td><td>  </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th>Cart Subtotal</th>
+                                    <td>$600.00</td>
+                                </tr>
+                                <tr>
+                                    <th>Shipping</th>
+                                    <td><strong>$10.00</strong></td>
+                                </tr>
+                                <tr class="order_total">
+                                    <th>Order Total</th>
+                                    <td><strong>$610.00</strong></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+@*<input type="text" id="mytext" style="visibility:hidden" />*@
+
+<script type="text/javascript" src="~/implementation.js"></script>
+
+
+@*<ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true">
+    </ScriptManager>*@
